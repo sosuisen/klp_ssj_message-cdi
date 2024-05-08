@@ -7,5 +7,5 @@ import lombok.Getter;
 @AllArgsConstructor
 public class MessageDTO {
 	private String body;
-	private String date;
+	private String createdDate;
 }

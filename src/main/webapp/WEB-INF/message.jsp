@@ -8,7 +8,7 @@
 <title>メッセージアプリ</title>
 </head>
 <body>
-	<form action="message" method="post">
+	<form action="./" method="post">
 		メッセージ: <input type="text" name="body">
 		<button name="action" value="add">送信</button><br>
 		<button name="action" value="clear">クリア</button>
@@ -17,7 +17,7 @@
 	<h1>メッセージ一覧</h1>
 	<br>
 	<c:forEach var="mes" items="${ historyDTO }">
-	  ${ mes.body } (${ mes.date })<br />
+	  ${ mes.body } (${ mes.createdDate })<br />
 	</c:forEach>
 </body>
 </html>

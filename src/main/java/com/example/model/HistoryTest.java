@@ -14,7 +14,7 @@ import jakarta.inject.Named;
 public class HistoryTest extends AbstractHistory implements Serializable {
 	@PostConstruct
 	public void init() {
-		// list へテスト用データを追加
+		// リストへテスト用データを追加
 		this.add(new Message("こんにちは。", LocalDateTime.parse("2024-04-01T10:00:00"))); 
 		this.add(new Message("HistoryTestが注入されました。",LocalDateTime.parse("2024-04-02T10:00:00"))); 
 		this.add(new Message("これはテスト用データです！", LocalDateTime.parse("2024-04-03T10:00:00"))); 

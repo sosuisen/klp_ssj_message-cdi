@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 import com.example.dto.HistoryDTO;
 import com.example.dto.MessageDTO;
-import com.example.model.History;
+import com.example.model.AbstractHistory;
 import com.example.model.Message;
 
 import jakarta.inject.Inject;
@@ -15,11 +15,12 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class MessageServlet extends HttpServlet {
-	// ModelのインスタンスをCDIから取得します。
+	// ModelのオブジェクトをCDIから取得します。
 	@Inject
-	private History history;
+	// private History history;
+	private AbstractHistory history;
 	
-	// View側と共有したいDTOのインスタンスをCDIから取得します。
+	// View側と共有したいDTOのオブジェクトをCDIから取得します。
 	@Inject
 	private HistoryDTO historyDTO;
 
