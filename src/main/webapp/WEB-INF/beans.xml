@@ -5,6 +5,6 @@
 		http://xmlns.jcp.org/xml/ns/javaee
 		http://xmlns.jcp.org/xml/ns/javaee/beans_4_0.xsd">
 	<alternatives>
-	    <class>com.example.model.HistoryBean</class>
+	    <class>com.example.model.HistoryCensored</class>
 	</alternatives>
 </beans>
